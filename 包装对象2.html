@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+</head>
+<body>
+    <script>
+
+    	class People{
+    		constructor(name){
+    			this.name = name;
+    		}
+    		say(){
+    			console.log("我会说话")
+    		}
+    	}
+
+
+    	class Coder extends People{
+    		constructor(name,money){
+    			super(name);
+    			this.money = money;
+    		}
+    		coding(){
+    			console.log("我会编程")
+    		}
+    	}
+
+    	let c = new Coder("周杰伦",1000000)
+    	console.log(c)
+    </script>
+</body>
+</html>
